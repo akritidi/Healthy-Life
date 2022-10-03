@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.bg-success {
+  border-radius: 0.5em;
+}
+.btn-success {
+  background-color: rgba(0, 128, 0, 0.904);
+}
+.btn {
+  display: flex;
+  justify-content: right;
+  background-color: rgba(0, 128, 0, 0.904);
+  font-size: 18px;
+  margin-top: 18%;
+  border-radius: 0.5em;
+}
+.btn:hover {
+  color: rgba(0, 128, 0, 0.904);
+  background-color: white;
+}
+div.dropdown-menu.show {
+  background: rgba(0, 128, 0, 0.904);
+  color: white;
+}
+.dropdown-item a {
+  color: rgba(0, 128, 0, 0.904);
+  font-size: 15px;
+  font-weight: bold;
+}
+.dropdown-item:hover {
+  color: green;
+  text-decoration: none;
+  background-color: white;
+  width: max-content;
+  font-weight: bold;
+}
+
+.nav-item {
+  font-size: 19px;
+}
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 128, 0, 0.904);
+}
+.logo {
+  flex: 1 1 auto;
+  padding-left: 5%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 35px;
+  color: white;
+}
+#user-dropdown{
+  text-transform: none;
+}
+#js-dropdown-item:hover{
+ color: rgba(0, 128, 0, 0.904);
+}
+.user-img{
+  background-image: url("../images/avatar.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  visibility: hidden;
+}
+.navbar a {
+  margin-left: 15px;
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.categories {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 2%;
+  background-color: white;
+  overflow: hidden;
+}
+.header {
+  color: white;
+  background-color: rgba(0, 128, 0, 0.904);
+  padding-left: 2%;
+}
+.small {
+  font-size: 110%;
+  color: #282828;
+}
+.writer {
+  color: #282828;
+}
+.b1 {
+  width: 100%;
+  height: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
+
+  overflow: hidden;
+}
+.b2 {
+  max-width: 100%;
+  height: auto;
+  float: left;
+  margin-right: 4%;
+
+  overflow: hidden;
+}
+.b2 img {
+  display: block;
+  transition: transform 0.4s;
+}
+.b2:hover img {
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+.b2 a {
+  margin: 0px;
+}
+.b3 {
+  width: 60%;
+  height: 300px;
+  padding-top: 1%;
+  text-align: left;
+  float: left;
+  border-top: 1px solid rgba(0, 128, 0, 0.904);
+  border-bottom: 1px solid rgba(0, 128, 0, 0.904);
+
+  overflow: hidden;
+}
+.b3 a {
+  margin: 0px;
+  color: black;
+  text-decoration: none;
+  text-transform: none;
+}
+.b3 a:hover {
+  color: rgba(0, 128, 0, 0.904);
+}
+
+.conteiner {
+  padding-top: 10%;
+  overflow: hidden;
+}
+
+#signin {
+  width: fit-content;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: rgba(0, 128, 0, 0.904);
+  background-color: #f4f4f4;
+  border-radius: 0.5em;
+  background-size: 100px 100px;
+}
+/* Footer*/
+#main-footer {
+  font-size: 18px;
+  color: white;
+  background-color: rgba(0, 128, 0, 0.904);
+  text-align: center;
+  margin-top: 2%;
+  width: 100%;
+  height: 60px; 
+}
+#main-footer a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1%; 
+}
+#main-footer a:hover {
+  color: lightgreen;
+}
+#main-footer p {
+  margin: 0;
+}
+
+@media (max-width: 1400px) {
+  .b3 {
+    width: 340px;
+    height: 300px;
+  }
+}
+@media (max-width: 1058px) {
+  .b3 {
+    width: 96%;
+    max-width: 340px;
+    height: auto;
+    min-height: 300px;
+    border-top: none;
+  }
+}
+@media only screen and (max-width: 1544px) {
+  .logo {
+    margin-left: 0%;
+  }
+}
+@media only screen and (max-width: 1485px) {
+  .categories {
+    margin-top: 70px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .categories {
+    margin-top: 115px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .b3 h1 {
+    font-size: 180%;
+  }
+  .categories{
+    width: 90%;
+  }
+  .header{
+    font-size: 220%;
+  }
+}

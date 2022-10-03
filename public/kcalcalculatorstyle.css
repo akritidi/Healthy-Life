@@ -1,0 +1,551 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+/* Nav bar START */
+.nav-item {
+  font-size: 19px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 128, 0, 0.904);
+}
+
+.nav-item {
+  font-size: 19px;
+}
+
+.logo {
+  flex: 1 1 auto;
+  padding-left: 5%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 35px;
+  color: white;
+}
+
+#signin {
+  width: fit-content;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: rgba(0, 128, 0, 0.904);
+  background-color: #f4f4f4;
+  border-radius: 0.5em;
+  background-size: 100px 100px;
+}
+
+.navbar a {
+  margin-left: 15px;
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+div.dropdown-menu.show {
+  background: rgba(0, 128, 0, 0.904);
+  color: white;
+}
+
+.dropdown-item a {
+  color: rgba(0, 128, 0, 0.904);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.dropdown-item:hover {
+  color: green;
+  text-decoration: none;
+  background-color: white;
+  width: max-content;
+  font-weight: bold;
+}
+#user-dropdown {
+  text-transform: none;
+}
+#js-dropdown-item:hover {
+  color: rgba(0, 128, 0, 0.904);
+}
+.user-img {
+  background-image: url("./images/avatar.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  visibility: hidden;
+}
+/* Nav bar END*/
+.container-box {
+  margin-top: 2%;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  background-color: rgba(0, 128, 0, 0.904);
+  color: white;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Calculation Box START */
+.calcbox {
+  width: 50%;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  background: rgba(184, 234, 213, 1);
+
+  color: black;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.calcbox h2 {
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 128, 0, 0.904);
+  text-align: center;
+}
+
+/* Forms START */
+.form-group {
+  margin: 0;
+}
+.form-row {
+  margin-left: 1px;
+}
+/* Labels START*/
+#foodlabel {
+  margin-left: 0.5em;
+}
+#foodcalorieslabel {
+  margin-left: 0.5em;
+}
+#foodquantitylabel {
+  margin-left: 0.5em;
+}
+#timezoneslabel {
+  margin-left: 0.5em;
+}
+/* Labels END */
+
+/* Input Boxes START */
+#food {
+  width: 35%;
+  margin-left: 2.5em;
+  height: 32px;
+}
+#foodcalories {
+  width: 71px;
+  margin-left: 1.25em;
+  height: 32px;
+}
+#foodquantity {
+  width: 71px;
+  height: 32px;
+  margin-left: 1.1em;
+}
+#timezones {
+  width: 35%;
+  margin-left: 0.5em;
+  height: 35px;
+}
+/* Input Boxes END*/
+
+/* Forms END */
+.btn-dark {
+  width: fit-content;
+  margin-left: 0.5em;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  font-size: 25px;
+}
+/* Calculation Box END */
+
+/* Timezone Boxes START */
+.timezone-box {
+  overflow: scroll;
+  width: 50%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  background: rgba(184, 234, 213, 1);
+  color: black;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h3 {
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 128, 0, 0.904);
+  text-align: center;
+}
+
+/* Timezone Boxes END */
+
+#show-result {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  color: rgba(0, 128, 0, 0.904);
+  text-align: center;
+  visibility: hidden;
+  font-size: 28px;
+}
+
+/* Table Styling START */
+.table {
+  border-collapse: collapse;
+  font-size: 25x;
+  width: 100%;
+}
+
+.table tr td {
+  border: 1 px solid #000;
+  padding: 10px;
+  font-size: large;
+}
+
+.table th {
+  font-style: italic;
+  font-size: x-large;
+  border: 1 px solid #000;
+}
+
+.table td:nth-child(3) {
+  margin: 0;
+  padding: 10px;
+  width: 19px;
+  border-left: none;
+}
+
+/* Table Styling END */
+
+.wrapper {
+  margin-top: 5%;
+}
+
+.calendar {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.2);
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 30px;
+  text-align: center;
+  background-color: rgba(0, 128, 0, 0.904);
+  color: #fff;
+}
+
+.weekdays {
+  background-color: rgba(184, 234, 213, 1);
+  color: black;
+  padding: 7px 0;
+  display: flex;
+}
+
+.days {
+  font-weight: 300;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weekdays div,
+.days div {
+  text-align: center;
+  width: 14.28%;
+}
+
+.days div {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  transition: all 0.4s;
+}
+
+.prev_date {
+  color: #999;
+}
+
+.today {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.days div:hover {
+  cursor: pointer;
+  background-color: #dfe6e9;
+}
+
+.prev,
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 23px;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+
+.prev:hover,
+.next:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#month {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#selectedDayCal {
+  background-color: white;
+  color: rgba(0, 128, 0, 0.904);
+  margin-top: 2%;
+  visibility: hidden;
+}
+/* Footer*/
+#main-footer {
+  font-size: 18px;
+  color: white;
+  background-color: rgba(0, 128, 0, 0.904);
+  text-align: center;
+  margin-top: 2%;
+  width: 100%;
+  height: 60px;
+}
+#main-footer a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1%;
+}
+#main-footer a:hover {
+  color: lightgreen;
+}
+#main-footer p {
+  margin: 0;
+}
+
+/* Media START */
+
+@media only screen and (max-width: 1400px) {
+  .calcbox {
+    width: 53%;
+  }
+  .timezone-box {
+    width: 53%;
+  }
+  #show-result {
+    width: 53%;
+  }
+  h1 {
+    width: 53%;
+  }
+  .calendar {
+    width: 53%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .calcbox {
+    width: 56%;
+  }
+  .timezone-box {
+    width: 56%;
+  }
+  #show-result {
+    width: 56%;
+  }
+  h1 {
+    width: 56%;
+  }
+  .calendar {
+    width: 56%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .calcbox {
+    width: 59%;
+  }
+  .timezone-box {
+    width: 59%;
+  }
+  #show-result {
+    width: 59%;
+  }
+  h1 {
+    width: 59%;
+  }
+  .calendar {
+    width: 59%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .calcbox {
+    width: 62%;
+  }
+  .timezone-box {
+    width: 62%;
+  }
+  #show-result {
+    width: 62%;
+  }
+  h1 {
+    width: 62%;
+  }
+  .calendar {
+    width: 62%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .calcbox {
+    width: 67%;
+  }
+  .timezone-box {
+    width: 67%;
+  }
+  .table tr td {
+    font-size: medium;
+  }
+  .table th {
+    font-size: large;
+  }
+  #show-result {
+    width: 67%;
+  }
+  h1 {
+    width: 67%;
+  }
+  .calendar {
+    width: 67%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .calcbox {
+    width: 72%;
+  }
+  .timezone-box {
+    width: 72%;
+  }
+  .table tr td {
+    font-size: medium;
+  }
+  .table th {
+    font-size: large;
+  }
+  #show-result {
+    width: 72%;
+  }
+  h1 {
+    width: 72%;
+  }
+  .calendar {
+    width: 72%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .calcbox {
+    width: 77%;
+  }
+  .timezone-box {
+    width: 77%;
+  }
+  .table tr td {
+    font-size: medium;
+  }
+  .table th {
+    font-size: large;
+  }
+  #show-result {
+    width: 77%;
+  }
+  h1 {
+    width: 77%;
+  }
+  .calendar {
+    width: 77%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .calcbox {
+    width: 84%;
+  }
+  .timezone-box {
+    width: 84%;
+  }
+  .table tr td {
+    font-size: medium;
+  }
+  .table th {
+    font-size: large;
+  }
+  #show-result {
+    width: 84%;
+  }
+  h1 {
+    width: 84%;
+  }
+  .calendar {
+    width: 84%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .calcbox {
+    width: 89%;
+  }
+  .timezone-box {
+    width: 89%;
+  }
+  .table tr td {
+    font-size: medium;
+  }
+  .table th {
+    font-size: large;
+  }
+  #show-result {
+    width: 89%;
+    font-size: 23px;
+  }
+  h1 {
+    width: 89%;
+  }
+  .calendar {
+    width: 89%;
+  }
+}

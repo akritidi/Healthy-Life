@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+.container-fluid {
+  margin-top: 2%;
+}
+#signin {
+  width: fit-content;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: rgba(0, 128, 0, 0.904);
+  background-color: #f4f4f4;
+  border-radius: 0.5em;
+  background-size: 100px 100px;
+}
+.bg-success {
+  border-radius: 0.5em;
+}
+.btn-success {
+  background-color: rgba(0, 128, 0, 0.904);
+}
+.btn {
+  display: flex;
+  justify-content: right;
+  background-color: rgba(0, 128, 0, 0.904);
+  font-size: 18px;
+  margin-top: 18%;
+  border-radius: 0.5em;
+}
+.btn:hover {
+  color: rgba(0, 128, 0, 0.904);
+  background-color: white;
+}
+div.dropdown-menu.show {
+  background: rgba(0, 128, 0, 0.904);
+  color: white;
+}
+.dropdown-item a {
+  color: rgba(0, 128, 0, 0.904);
+  font-size: 15px;
+  font-weight: bold;
+}
+.dropdown-item:hover {
+  color: green;
+  text-decoration: none;
+  background-color: white;
+  width: max-content;
+  font-weight: bold;
+}
+.nav-item {
+  font-size: 19px;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 128, 0, 0.904);
+}
+.navbar a {
+  margin-left: 15px;
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.logo {
+  flex: 1 1 auto;
+  padding-left: 5%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 35px;
+  color: white;
+}
+#user-dropdown{
+  text-transform: none;
+}
+#js-dropdown-item:hover{
+ color: rgba(0, 128, 0, 0.904);
+}
+.user-img{
+  background-image: url("./images/avatar.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  visibility: hidden;
+}
+.categories {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.6%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 2%;
+  background-color: white;
+  overflow: hidden;
+  background-color: white;
+  margin-top: 3%;
+  overflow: hidden;
+}
+.categories h1 {
+  color: white;
+  background-color: rgba(0, 128, 0, 0.904);
+  padding-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#bmibox h3 {
+  text-align: center;
+  background-color: rgba(0, 128, 0, 0.904);
+  color: white;
+  border: none;
+  padding: 0%;
+  margin: 0%;
+}
+#bmiform {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 128, 0, 0.904);
+  color: white;
+  padding: 2%;
+  justify-content: center;
+}
+#bmiform input {
+  margin-bottom: 1%;
+  margin-left: 40%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+#bmiform label {
+  display: flex;
+  justify-content: center;
+}
+#bmibtn {
+  border-style: solid 1px white;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+  color: rgba(0, 128, 0, 0.904);
+  padding: 2%;
+}
+#bmitable {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 128, 0, 0.904);
+  color: white;
+  text-align: center;
+  padding: 2%;
+}
+#bmitable th {
+  border: 1px solid white;
+  margin: 5px;
+}
+#bmitable td {
+  border: 1px solid white;
+  margin: 3px;
+  padding: 3px;
+}
+/* Footer*/
+#main-footer {
+  font-size: 18px;
+  color: white;
+  background-color: rgba(0, 128, 0, 0.904);
+  text-align: center;
+  margin-top: 2%;
+  width: 100%;
+  height: 60px; 
+}
+#main-footer a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1%;
+}
+#main-footer a:hover {
+  color: lightgreen;
+}
+#main-footer img {
+  height: 3em;
+  width: 3em;
+}
+
+#main-footer p {
+  margin: 0;
+}
+@media only screen and (max-width: 1544px) {
+  .logo {
+    margin-left: 0%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .categories{
+    width: 90%;
+  }
+  .categories h1{
+    font-size: 160%;
+  }
+  #bmiform input {
+    margin-bottom: 1%;
+    margin-left: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container-fluid{
+    font-size: 90%;
+  }
+}
+

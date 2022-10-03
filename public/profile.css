@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+  }
+  input{
+    display: none
+  }
+  area:hover {
+    cursor: pointer;
+  }
+  .bg-success {
+    border-radius: 0.5em;
+  }
+  .btn-success {
+    background-color: rgba(0, 128, 0, 0.904);
+  }
+  .btn {
+    display: flex;
+    justify-content: right;
+    background-color: rgba(0, 128, 0, 0.904);
+    font-size: 18px;
+    margin-top: 18%;
+    border-radius: 0.5em;
+  }
+  .btn:hover {
+    color: rgba(0, 128, 0, 0.904);
+    background-color: white;
+  }
+  div.dropdown-menu.show {
+    background: rgba(0, 128, 0, 0.904);
+    color: white;
+  }
+  .dropdown-item a {
+    color: rgba(0, 128, 0, 0.904);
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .dropdown-item:hover {
+    color: green;
+    text-decoration: none;
+    background-color: white;
+    width: max-content;
+    font-weight: bold;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 128, 0, 0.904);
+  }
+  .nav-item {
+    font-size: 19px;
+  }
+  .navbar a {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .logo {
+    flex: 1 1 auto;
+    padding-left: 5%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+  }
+  #user-dropdown{
+    text-transform: none;
+  }
+  #js-dropdown-item:hover{
+   color: rgba(0, 128, 0, 0.904);
+  }
+  .user-img{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    visibility: hidden;
+  }
+
+  .profile_box{
+    width: 60%;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+  .img_box img {
+    width: 100%;
+    height: auto;
+  }
+  .img_box {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;    
+    margin-left: 10%;
+    float: left;
+    
+    box-shadow:  0 0 10px 5px rgba(0, 128, 0, 0.904);
+  }
+  .name{
+    max-width: 250px;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 2%;
+    margin-left: 10%;
+    color: rgba(0, 128, 0, 0.904);
+  }
+  .info_header{
+    margin-bottom: 5%;
+    text-align: center;
+    background-color: rgba(0, 128, 0, 0.904);
+    color: white;
+  }
+  .info{
+    margin-left: 50%;
+    min-height: 250px;
+    padding-top: 4%;
+    text-align: center;
+    overflow: hidden;
+    border-left: 1px solid rgba(0, 128, 0, 0.904);
+  }
+  #editButton{
+    background-color: rgba(0, 128, 0, 0.904);
+    border-color: rgba(0, 128, 0, 0.904);
+    cursor: pointer;
+    outline: none;
+  }
+  #editButton:hover{
+    background-color: lightgreen;
+    border-color: lightgreen;
+  }
+  #editImageButton{
+    background-color: rgba(0, 128, 0, 0.904);
+    border-color: rgba(0, 128, 0, 0.904);
+    cursor: pointer;
+    outline: none;
+  }
+  #editImageButton:hover{
+    background-color: lightgreen;
+    border-color: lightgreen;
+  }
+  #imageform{
+    /*border: 1px solid rgba(0, 128, 0, 0.904);*/
+    overflow: hidden;
+    margin-bottom: 2%;
+    padding-right: 90%;
+  }
+  /* Footer*/
+  #main-footer {
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0, 128, 0, 0.904);
+    text-align: center;
+    margin-top: 14.7%;
+    width: 100%;
+    height: 60px; /*New by DAFAL */
+  }
+  #main-footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1%;
+  }
+  #main-footer a:hover {
+    color: lightgreen;
+  }
+  /*New by DAFAL*/
+  #main-footer p {
+    margin: 0;
+  }
+  #signin {
+    width: fit-content;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: rgba(0, 128, 0, 0.904);
+    background-color: #f4f4f4;
+    border-radius: 0.5em;
+    background-size: 100px 100px;
+  }
+
+  @media only screen and (max-width: 1544px) {
+    .logo {
+      margin-left: 0%;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+   .img_box{
+       float: none;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 7%;
+   }
+    .info{
+        margin-left: 0%;
+        min-height: 0%;
+        border: none;
+    }
+    .name{
+        margin-left: 0%;
+        text-align: center;
+        max-width: none;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .profile_box{
+      width: 90%;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    #imageform{
+      font-size: 14px;
+    }
+  }
